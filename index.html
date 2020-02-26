@@ -4,53 +4,300 @@
     <title>HTML wireframe</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/normalize/6.0.0/normalize.css">
+    <script src="https://kit.fontawesome.com/e5bcfa9851.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <link rel="stylesheet" href="bower_components/aos/dist/aos.css">
+
+    <script src="bower_components/aos/dist/aos.js"></script>
     <link rel="stylesheet" type="text/css" href="main.css">
+    <link href="https://fonts.googleapis.com/css?family=Courgette|Ubuntu&display=swap" rel="stylesheet">
 </head>
 <body>
-    <nav role="navigation" class="navBar">Nav   Nav  Nav  Nav </nav>
-    <main role="main">
-        <header role="banner">
+    <header class="top-head">
+        <div class="menu-toggler">
+            <div class="bar half start"></div>
+            <div clas="bar"></div>
+            <div class="bar half end"></div>
+        </div>
+    <nav role="navigation" class="top-nav" id="page-nav">     
+             
+        <ul class="nav-list">  
             
-            <h1>Title</h1>
+            <li><a href="index.html" class="nav-link">Home</a></li>
+                
+            <li><a href="#about-me" class="nav-link">About Me</a></li>
+       
+            <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
+        
+            <li><a href="#services" class="nav-link">Services</a></li>  
+            
+            <li><a href="#experience" class="nav-link">Experience</a></li>
+        
+            <li><a href="#contact" class="nav-link">Contact Me!</a></li>                  
+        
+        </ul> 
+        
+    </nav>
+    <div class="container">    
+        <div class="banner_logo" role="banner">        
             <div class="logo-image">
                 Logo Here
             </div>
             <div class="subTitle">
-                Subtitle here
+                <h3>Web Developer and Graphic Designer</h3>
             </div>
-        </header>
+        </div>
+      </div>
 
-        <section>
-            <div class="pers-image">
-                Image here!
-            </div>            
-            About Me
-            <div class="brief-intro">
-                Intro
+    </header>
+    <main role="main">      
+    
+
+    <section class="about-me" id="about-me">
+      <div class="container">
+          <div class="section-heading">            
+                <h2>About</h2>
+                <h3>Myself</h3>              
+          </div>
+        <div class="pers-image">
+          <div class="profile_img">
+              <img src="images/profile.jpg" alt="personal image">
+          </div>
+        </div>            
+            
+        <div class="about-details">
+          
+                
+            <p>
+                Greetings and Salutations! I'm Cyra.  I'm a Full Stack developer and a passionate graphic design artist!
+
+                Having recently graduated from Thinkful's Full Stack Immersion Engineering Bootcamp, I am full to the 
+                brim with curiousity and the need to exlpore the world with try/catch statements. This, coupled with 
+                the Graphic Design Bachelors I recently received from Rasmussen's online program, I am in a unique 
+                position where I understand both the creative and logical side of front end development. Coding intrigues 
+                me due to the plethora of solutions available to a problem. Watching and idea go from planning to 
+                implementation feels like creating a new life. That shout of 'It Works!' is ultimately rewarding! 
+                I enjoy checking out code everywhere and making punny code jokes.
+
+            </p>
+            <p>
+                When I'm not coding, you can find me playing with my dogs, whipping up creations in the kitchen, 
+                exploring a new destination or creating YouTube videos.  I love to learn and I'm always looking 
+                for new subjects to tackle.  My current explorations are guitar and ukulele. Languages are also a 
+                passion of mine.  I currently study 18 spoken languages from all over the world, and any
+                programming language I encounter. I'm also working on writing and illustrating my first sci-fi 
+                graphic novel.
+            </p>
+          </div>
+        </div>
+      </div> 
+      <div class="return-home">
+        <a href="index.html" class="nav-link">Home</a>
+      </div>   
+    </section>
+
+    <section class="portfolio" id="portfolio">
+        <div class="container">
+            <div class="section-heading">
+                <h2>Portfolio</h2>
+                <h3>Recent Projects</h3>
             </div>
+            <div class="portfolio-item">
+              <div class="portfolio-description">
+                  <h2>Web Development</h2>
+                  <h3>Quiz App</h3>                                              
+                  <p>
+                    A quick and easy web quiz app. 
+                  </p>
+                  <!-- <a href="#" class="cta">View Details</a> -->
+                <div class="portfolio-img">
+                    <img src="images/Harry-Potter-Quiz-Screenshot.gif" alt="Harry Potter Quiz image" class="project-img">
+                </div> 
+              </div>
+            </div>
+
+        <div class="portfolio-item">
+            <div class="portfolio-description has-margin-right">
+                <h2>Graphic Design</h2>
+                <h3>Coffeehouse Logo</h3>        
+                <p>
+                    A dynamic and fun logo for a coffeehouse and yarn
+                    shop.  
+                </p>
+                <!-- <a href="#" class="cta">View Details</a> -->
+                <div class="portfolio-img has-margin-right">
+                    <img src="images/cchapman_hyperneedlelogo_draftstatus_060219.jpg" alt="Coffeehouse logo" class="project-img"> 
+                </div> 
+            </div>
+        </div>
+
+        <div class="portfolio-item">
+            <div class="portfolio-description">
+                <h2>Web Development</h2>
+                <h3>Bookmarks App</h3>                                              
+                <p>
+                    A quick and easy app that allows user to add, update, delete bookmarks.
+                    This app also allows user to to rate the bookmark and visit the site url. 
+                </p>
+                <!-- <a href="#" class="cta">View Details</a> -->
+                <div class="portfolio-img">
+                        <img src="images/portitem3.jpg" alt="" class="project-img">
+                </div>             
+            </div>
+        </div>
+        <div class="return-home">
+            <a href="index.html" class="nav-link">Home</a>
+          </div>
+    </section> 
+
+        <section class="services" id="services">
+            <div class="container">
+                <div class="section-heading">
+                    <h2>Services</h2>
+                    <h3>What I can do for you</h3>
+
+                </div>
+                <div class="my-skills">
+                    <div class="skill">
+                        <div class="icon-container">
+                            <i class="fas fa-layer-group"></i>
+                        </div>
+                        <h2>Web Design</h2>
+                        <p>Being creative is a passion of mine.  Add a newly ignited flame for 
+                            the technology of the web and you get Web Design.  I have recently started
+                            creating dynamic and eye catching Websites.
+                        </p>
+
+                    </div>
+                    <div class="skill">
+                           <div class="icon-container">
+                               <i class="fas fa-code"></i>
+                           </div>
+                           <h2>Junior Software Engineer</h2>
+                           <p>Software Engineering is my main focus.</p>
+                           
+                       </div> 
+                    <div class="skill">
+                        <div class="icon-container">
+                            <i class="fas fa-vector-square"></i>
+                        </div>
+                        <h2>Graphic Design</h2>
+                        <p>Sometimes you will find me creating a logo package for a client.  This includes a well designed
+                            logo, letterhead, business card and any other merchandise the client requires.
+                        </p>
+                        
+                    </div>  
+                    <div class="skill">
+                       <div class="icon-container">
+                           <i class="fas fa-camera"></i>
+                       </div>
+                       <h2>Photography</h2>
+                       <p>When I am not behind a computer screen, you will find me wandering this vast world, 
+                           in search of the next great photo. I enjoy landscape and portrait photography.  I also
+                           dabble in food photography.
+                       </p>
+                       
+                   </div>  
+                </div>
+                
+
+            </div>
+            <div class="return-home">
+                <a href="index.html" class="nav-link">Home</a>
+              </div>
         </section>
 
-        <section>
-            Experience
-            <div class="job-info">
-                Job Info
-            </div>
-        </section>
 
-        <section>
-            Portfolio
-            <div class="project-info">
-                Project Info
+        <section class="job-info" id="experience">
+            <div class="container">
+                <div class="section-heading">
+                    <h2>Work Experience</h2>
+                    <h3>Past and Current Jobs</h3>
+                </div>
+                <div class="timeline">
+                    <ul>
+                        <li class="date" data-date="2011-Present">
+                            <h3>Company</h3>
+                            <p>Some information</p>
+                        </li>
+                        <li class="date" data-date="2011-Present">
+                            <h3>Company</h3>
+                            <p>Some information</p>
+                        </li>
+                        <li class="date" data-date="2011-Present">
+                            <h3>Company</h3>
+                            <p>Some information</p>
+                        </li> 
+                    </ul>
+                </div>
             </div>
-        </section>  
+            <div class="return-home">
+                <a href="index.html" class="nav-link">Home</a>
+              </div>
+        </section>         
         
-        <section>
-            Contact
-            <div class="contact-form">
-                Form here!
+    <section class="contact" id="contact">
+      <div class="container">
+        <div class="section-heading">
+            <h2>Contact</h2>
+            <h3>Let's work together</h3>
+        </div>
+        <div class="contact-form">
+            <form action="">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name..." required>
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email..." required>
+                <label for="service">Services</label>
+                <select name="service" id="service">
+                    <option value="">Web Design</option>
+                    <option value="">Web Development</option>
+                    <option value="">Graphic Design</option>
+                </select>
+                <label for="subject">Subject</label>
+                <textarea name="subject" id="subject" cols="10" rows="10"></textarea>
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+        <div class="social-icons">
+            <ul class="nav-list">
+                <li>
+                    <a href="#" class="icon-link">
+                    <i class="fab fa-facebook-square"></i>            
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="icon-link">
+                    <i class="fab fa-twitter-square"></i>            
+                    </a>
+                </li>                           
+                <li>
+                    <a href="#" class="icon-link">
+                        <i class="fab fa-github-square"></i>            
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="icon-link">
+                        <i class="fab fa-facebook-square"></i>
+                    </a>
+                </li>           
+            </ul>
+        </div>
+      </div> 
+      <div class="return-home">
+        <a href="index.html" class="nav-link">Home</a>
+      </div>
+    </section>
+        <footer class="copyright">
+            <div class="up" id="up">
+                <i class="fas fa-chevron-up"></i>
+                <p>Copyright: 2019 Cyra DeLa Riviviere</p>
             </div>
-        </section>
+        </footer>
     </main>
-    <footer role="content-info">Social Media Icons here!!</footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="main.js"></script>
+    
 </body>
 </html>
