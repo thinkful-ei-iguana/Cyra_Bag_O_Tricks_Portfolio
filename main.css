@@ -271,6 +271,14 @@
   color: rgb(247, 140, 19)
 }
 
+
+.cyras_slide {
+  padding: 20px;
+  opacity: .8;
+  width: 300px;
+  border-radius: 25%;
+
+}
 .project-img {
   width: 45%;
   height: auto;
