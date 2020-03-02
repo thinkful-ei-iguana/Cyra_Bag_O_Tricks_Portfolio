@@ -6,7 +6,7 @@
     <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/normalize/6.0.0/normalize.css">
     <script src="https://kit.fontawesome.com/e5bcfa9851.js" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script> 
- 
+    <link href="https://fonts.googleapis.com/css?family=Asset|Clicker+Script|Coiny|Fascinate|Josefin+Sans|Knewave|Modak|Rammetto+One|Yeon+Sung&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="main.css">
     <link href="https://fonts.googleapis.com/css?family=Courgette|Ubuntu&display=swap" rel="stylesheet">
 </head>
@@ -17,6 +17,7 @@
             <div clas="bar"></div>
             <div class="bar half end"></div>
         </div>
+
     <nav role="navigation" class="top-nav" id="page-nav">     
              
         <ul class="nav-list">  
@@ -36,10 +37,10 @@
         </ul> 
         
     </nav>
-    <div class="container">    
+    <div class="banner_container">    
         <div class="banner_logo" role="banner">        
-            <div class="logo-image">
-                Logo Here
+            <div class="img_container">
+                <img src="images/Cyra-Bag-O-Tricks-Logo-Recovered.gif"  alt="cyras bag o tricks logo" class="site_logo"/>
             </div>
             <div class="subTitle">
                 <h3>Web Developer and Graphic Designer</h3>
@@ -48,24 +49,18 @@
       </div>
 
     </header>
-    <main role="main">      
-    
+    <main role="main">   
 
     <section class="about-me" id="about-me">
-      <div class="container">
-          <div class="section-heading">            
+      <div class="about_container">        
+            <div class="profile_img">
+                <img src="images/profile.jpg" alt="personal image" class="pers_img">
+            </div>          
+          <div class="about-heading">            
                 <h2>About</h2>
-                <h3>Myself</h3>              
-          </div>
-        <div class="pers-image">
-          <div class="profile_img">
-              <img src="images/profile.jpg" alt="personal image">
-          </div>
-        </div>            
-            
-        <div class="about-details">
-          
-                
+                <h3>Me</h3>              
+          </div>        
+        <div class="about-details">           
             <p>
                 Greetings and Salutations! I'm Cyra.  I'm a Full Stack developer and a passionate graphic design artist!
 
@@ -154,7 +149,7 @@
             <div class="container">
                 <div class="section-heading">
                     <h2>Services</h2>
-                    <h3>What I can do for you</h3>
+                    <h3>Skill Set</h3>
 
                 </div>
                 <div class="my-skills">
@@ -233,14 +228,27 @@
                         <li class="date" data-date="August 2015 to current">
                             <h3>Cyra's Bag O Tricks</h3>
                             <h4>Freelance Frontend Developer</h4>
-                            <p>
-                                Interfaced with backend data systems to produce dynamic user experiences.
-                            </p>
+                            <ul class="duty-list">
+                                <li>
+                                    Created dynamic and interactive webistes for clients.
+                                </li>
+                                <li>
+                                    Created elegant interfaces for seamless user experience.
+                                </li>
+                              </ul>
                         </li>
                         <li class="date" data-date="Sept 1998-Present">
                             <h3>Smiling Lotus Massage</h3>
                             <h4>Independent Massage Therapist</h4>
-                            <p>De</p>
+                            <ul class="duty-list">
+                                <li>
+                                    Created massage treatment plans for clients.
+                                </li>
+                                <li>
+                                    Maintained a client portfolio with all clients' treatment plans, soap notes and 
+                                    nutrition advice.
+                                </li>
+                              </ul>
                         </li>                        
                     </ul>
                 </div>
@@ -257,7 +265,8 @@
             <h3>Let's work together</h3>
         </div>
         <div class="contact-form">
-            <form action="" class="contact_me">
+            <p>Contact Form Coming Soon!!</p>
+            <!-- <form action="" class="contact_me">
                 <label for="name">Name</label>
                 <input type="text" id="name" name="name" placeholder="Enter your name..." required>
                 <label for="email">Email</label>
@@ -271,10 +280,15 @@
                 <label for="subject">Subject</label>
                 <textarea name="subject" id="subject" cols="10" rows="10"></textarea>
                 <input type="submit" value="Submit">
-            </form>
+            </form> -->
         </div>
         <div class="social-icons">
             <ul class="nav-list">
+                <li>
+                    <a href="mailto:cyrasbagotricks@gmail.com?subject=subject text" target="_blank" class="icon-link">
+                        <i class="far fa-envelope"></i>
+                    </a>
+                </li>
                 <li>
                     <a href="https://www.facebook.com/cyra.delariviere.92" target="_blank"class="icon-link">
                     <i class="fab fa-facebook-square"></i>            
